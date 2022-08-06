@@ -4,7 +4,7 @@ import Link from "next/dist/client/link";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export default function register() {
+export default function Register() {
   let [name, updateName] = useState("");
   let [email, updateEmail] = useState("");
   let [password, updatePassword] = useState("");

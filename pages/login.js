@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Link from "next/dist/client/link";
 import { useRouter } from "next/router";
 
-export default function login() {
+export default function Login() {
   let [email, updateEmail] = useState("");
   let [password, updatePassword] = useState("");
 
