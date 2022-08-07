@@ -102,7 +102,11 @@ export default function Register() {
 
           <div className="flex justify-center mt-8">
             <button
-              className={`px-20 py-4 text-lg bg-green opacity-80 rounded-lg text-white font-semibold cursor-pointer hover:opacity-70`}
+              className={
+                isLoading
+                  ? `px-20 py-4 text-lg bg-green opacity-50 rounded-lg text-white font-semibold cursor-pointer`
+                  : `px-20 py-4 text-lg bg-green opacity-80 rounded-lg text-white font-semibold cursor-pointer hover:opacity-70`
+              }
               onSubmit={handleSubmitClick}
               disabled={isLoading}
             >
